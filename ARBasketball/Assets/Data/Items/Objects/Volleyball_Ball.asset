@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458a59c89fcccf342b46d94e0eda8f8c, type: 3}
+  m_Name: Volleyball_Ball
+  m_EditorClassIdentifier: 
+  _id: 1
+  _name: Volleyball ball
+  _icon: {fileID: 21300000, guid: c6875e8dabad6c74ab161dc1afe36031, type: 3}
+  _item: {fileID: 1742305882186416037, guid: e3d31a3f1785d1b4a905c77958415a12, type: 3}
