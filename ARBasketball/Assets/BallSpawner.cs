@@ -36,13 +36,13 @@ public class BallSpawner : ItemSpawner
             audioInteractor.PlayEffectSound("Error");
         }
 
-        if (_spawningObj == null) 
+        if (SpawningObj == null) 
         {
             Debug.Log("Нет предмета");
             return; 
         }
 
-        itemMovement.MoveItem(_spawningObj);
+        itemMovement.MoveItem(SpawningObj);
 
         DiactivateItem();
         Invoke(nameof(SpawnItem), 0.5f);
@@ -51,8 +51,8 @@ public class BallSpawner : ItemSpawner
 
     private void DiactivateItem()
     {
-        _spawningObj.Invoke(nameof(_spawningObj.UnvisibleItem), 1.7f);
-        _spawningObj = null;
+        SpawningObj.Invoke(nameof(SpawningObj.UnvisibleItem), 1.7f);
+        SpawningObj = null;
 
     }
 }

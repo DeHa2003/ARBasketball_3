@@ -25,7 +25,7 @@ public class MoveRotateItemPanel : Panel
         {
             if (value)
             {
-                if(itemSpawner._spawningObj == null)
+                if(itemSpawner.SpawningObj == null)
                 {
                     notificationInteractor.CreateNotification("Warning", "Not selected AR target");
                     return;
@@ -46,7 +46,7 @@ public class MoveRotateItemPanel : Panel
         {
             if (value)
             {
-                if (itemSpawner._spawningObj == null)
+                if (itemSpawner.SpawningObj == null)
                 {
                     notificationInteractor.CreateNotification("Warning", "Not selected AR target");
                     return;
@@ -67,7 +67,7 @@ public class MoveRotateItemPanel : Panel
         {
             if (value)
             {
-                if (itemSpawner._spawningObj == null)
+                if (itemSpawner.SpawningObj == null)
                 {
                     notificationInteractor.CreateNotification("Warning", "Not selected AR target");
                     return;

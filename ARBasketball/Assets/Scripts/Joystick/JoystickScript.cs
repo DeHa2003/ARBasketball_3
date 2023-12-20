@@ -17,7 +17,7 @@ public class JoystickScript : MonoBehaviour
         this.joystick = joystick;
         this.speed = speed;
 
-        item = spawner._spawningObj;
+        item = spawner.SpawningObj;
         if(item == null) { return; }
         itemBody = item.gameObject.transform;
         rb = item.gameObject.AddComponent<Rigidbody>();

@@ -18,7 +18,7 @@ public class ChoiceARTargetPanel : Panel
 
     public void CheckspawningObject()
     {
-        if(itemSpawner._spawningObj == null)
+        if(itemSpawner.SpawningObj == null)
         {
             notificationInteractor.CreateNotification("Warning", "Not selected AR target");
         }

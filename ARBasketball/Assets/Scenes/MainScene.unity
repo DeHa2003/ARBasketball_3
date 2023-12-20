@@ -9926,6 +9926,7 @@ GameObject:
   - component: {fileID: 1533019991}
   - component: {fileID: 1533019993}
   - component: {fileID: 1533019994}
+  - component: {fileID: 1533019995}
   m_Layer: 5
   m_Name: GamePlayPanel
   m_TagString: Untagged
@@ -9988,6 +9989,22 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1533019995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533019990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c75844a5fe964743a4daf8ad43410dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 341182085}
+  ARSpawner: {fileID: 1553405262}
+  ballSpawner: {fileID: 401917944}
+  minDistance: 2.5
 --- !u!1 &1547695979
 GameObject:
   m_ObjectHideFlags: 0
@@ -10343,7 +10360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1575706078
 RectTransform:
   m_ObjectHideFlags: 0

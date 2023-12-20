@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public Item _spawningObj { get; set; }
+    public Item SpawningObj { get; set; }
 
     [SerializeField] protected Transform posToSpawn;
 
@@ -15,9 +15,9 @@ public class ItemSpawner : MonoBehaviour
     {
         typeItem = item;
 
-        if (_spawningObj != null)
+        if (SpawningObj != null)
         {
-            if (_spawningObj.GetType() == item.GetType())
+            if (SpawningObj.GetType() == item.GetType())
             {
                 Debug.Log("Этот объект уже выбран");
                 return;
@@ -31,18 +31,18 @@ public class ItemSpawner : MonoBehaviour
 
     protected void SpawnItem()
     {
-        if (typeItem != null && _spawningObj == null)
+        if (typeItem != null && SpawningObj == null)
         {
-            _spawningObj = Instantiate(typeItem, posToSpawn.position, Quaternion.identity);
-            _spawningObj.Initialize();
-            _spawningObj.VisibleItem();
-            _spawningObj.transform.parent = posToSpawn.parent;
+            SpawningObj = Instantiate(typeItem, posToSpawn.position, Quaternion.identity);
+            SpawningObj.Initialize();
+            SpawningObj.VisibleItem();
+            SpawningObj.transform.parent = posToSpawn.parent;
         }
     }
 
     public void DestroyItem()
     {
-        _spawningObj.UnvisibleItem();
-        _spawningObj = null;
+        SpawningObj.UnvisibleItem();
+        SpawningObj = null;
     }
 }
