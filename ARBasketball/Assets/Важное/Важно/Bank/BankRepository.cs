@@ -13,7 +13,7 @@ namespace Lessons.Architecture
 
         public override void Initialize()
         {
-            coins = PlayerPrefs.GetInt(KEY, 1000);
+            coins = PlayerPrefs.GetInt(KEY, 0);
         }
 
         public override void Save()

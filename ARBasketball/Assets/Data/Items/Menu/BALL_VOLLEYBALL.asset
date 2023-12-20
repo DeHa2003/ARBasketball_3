@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BALL_VOLLEYBALL
   m_EditorClassIdentifier: 
   _id: 1
-  _price: 20
+  _price: 75
   _name: Volleyball ball
   _icon: {fileID: 21300000, guid: c6875e8dabad6c74ab161dc1afe36031, type: 3}
   _description: This is volleyball ball

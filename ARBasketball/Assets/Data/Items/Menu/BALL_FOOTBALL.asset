@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BALL_FOOTBALL
   m_EditorClassIdentifier: 
   _id: 2
-  _price: 25
+  _price: 100
   _name: Football ball
   _icon: {fileID: 21300000, guid: e5fbcedb79f61494a97c400285056e85, type: 3}
   _description: This is football ball
